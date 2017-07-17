@@ -15,15 +15,15 @@ const suffix = '/node_modules/preact-cli-plugin-typescript'
 const root = cwd.endsWith(suffix) ? cwd.substr(0, cwd.length - suffix.length) : cwd
 
 if (fs.access(path.join(root, 'tsconfig.json'), fs.constants.F_OK, () => {})) {
+  // TODO: If file exists, get existing config and merge correct values.
   console.warn('Detected an existing tsconfig - make sure you have the correct settings.')
 }
 else {
-  // TODO: Proper node way of copying/writing files. exec with strings is nasty.
-
-  exec(`cp ${path.join('src', 'tsconfig.json')} ${root}`, {cwd: root}, (error) => {
-    if (error) {
-        console.error(`An error occurred while creating tsconfig: ${error}`)
-        return
-    }
-  })
+  try {
+    fs.createReadStream(path.join('src', 'tsconfig.json'))
+      .pipe(fs.createWriteStream(path.join(root, 'tsconfig.json')));
+  }
+  catch (e) {
+    console.error('An error occurred while creating the tsconfig', e);
+  }
 }
