@@ -3,8 +3,11 @@
   "description": "Use TypeScript with preact-cli",
   "version": "0.1.0",
   "main": "src/index.js",
-  "author": "https://github.com/wub",
-  "repository": "https://github.com/wub/preact-cli-plugin-typescript",
+  "author": "Jarrod Mosen <jarrod.mosen@me.com>",
+  "repository": {
+    "url": "https://github.com/wub/preact-cli-plugin-typescript",
+    "type": "git"
+  },
   "license": "MIT",
   "bin": "bin/index.js",
   "scripts": {
