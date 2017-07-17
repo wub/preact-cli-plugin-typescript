@@ -9,7 +9,7 @@ If you prefer Flow, check out [preact-cli-plugin-flow](https://github.com/SaraVi
 Install via npm or yarn:
 
 ```shell
-npm install preact-cli-plugin-typescript --save-dev
+npm i preact-cli-plugin-typescript --save-dev
 ```
 ```shell
 yarn add preact-cli-plugin-typescript --dev
