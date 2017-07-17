@@ -16,6 +16,7 @@
     "url": "https://github.com/wub/preact-cli-plugin-typescript"
   },
   "scripts": {
+    "lint": "standard",
     "postinstall": "node ./bin/index.js"
   },
   "dependencies": {
@@ -23,6 +24,7 @@
     "typescript": "^2.4.1"
   },
   "devDependencies": {
-    "publish-please": "^2.3.1"
+    "publish-please": "^2.3.1",
+    "standard": "^10.0.2"
   }
 }
