@@ -36,3 +36,7 @@ lib
 nbproject
 .idea
 .node_history
+
+# These should only be in ./src
+/tsconfig.json
+/preact.config.js
