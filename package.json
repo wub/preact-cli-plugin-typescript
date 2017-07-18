@@ -1,6 +1,6 @@
 {
   "name": "preact-cli-plugin-typescript",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Use TypeScript with preact-cli",
   "keywords": [
     "preact",
@@ -16,11 +16,11 @@
     "url": "https://github.com/wub/preact-cli-plugin-typescript"
   },
   "scripts": {
-    "lint": "standard",
-    "postinstall": "node ./bin/index.js"
+    "postinstall": "node ./bin/index.js",
+    "lint": "standard"
   },
   "dependencies": {
-    "awesome-typescript-loader": "^3.2.1",
+    "ts-loader": "^2.3.0",
     "typescript": "^2.4.1"
   },
   "devDependencies": {
