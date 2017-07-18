@@ -1,9 +1,10 @@
-# preact-cli-plugin-typescript &middot; [![Travis Status](https://img.shields.io/travis/wub/preact-cli-plugin-typescript/master.svg?label=travis&maxAge=43200)](https://travis-ci.org/wub/preact-cli-plugin-typescript) [![npm version](https://img.shields.io/npm/v/preact-cli-plugin-typescript.svg)](https://www.npmjs.com/package/preact-cli-plugin-typescript) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+# preact-cli-plugin-typescript &middot; [![Build status](https://img.shields.io/travis/wub/preact-cli-plugin-typescript/master.svg?label=build&maxAge=43200)](https://travis-ci.org/wub/preact-cli-plugin-typescript) [![npm version](https://img.shields.io/npm/v/preact-cli-plugin-typescript.svg)](https://www.npmjs.com/package/preact-cli-plugin-typescript) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 Use TypeScript with [preact-cli](https://github.com/developit/preact-cli).
 
 This will install [typescript](https://github.com/Microsoft/TypeScript)
-and [awesome-typescript-loader](https://github.com/s-panferov/awesome-typescript-loader).
+and [ts-loader](https://github.com/TypeStrong/ts-loader). Support for
+`awesome-typescript-loader` will be added soon.
 
 If you prefer Flow, check out [preact-cli-plugin-flow](https://github.com/SaraVieira/preact-cli-plugin-flow).
 
