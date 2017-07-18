@@ -30,6 +30,8 @@ export default function(config) {
 
 ## Usage
 
+### Existing `tsconfig.json`
+
 If you have an existing `tsconfig.json` file, be sure to use the correct
 JSX factory:
 
@@ -45,8 +47,13 @@ JSX factory:
 Now you can simply add `.ts`/`.tsx` files to your project, and they'll
 be compiled. Cool. Make sure you use `.tsx` if you want to use JSX.
 
-If you want to incrementally move to TypeScript, enable `allowJs`
-in your `tsconfig.json`:
+### Mixing JavaScript and TypeScript
+
+You might see an error like
+`Module './components/app' was resolved to '/src/components/app.js', but '--allowJs' is not set.`.
+
+To fix this, or if you want to incrementally move to TypeScript, make sure
+`allowJs` is enabled in your `tsconfig.json`:
 
 ```json
 {
@@ -54,4 +61,22 @@ in your `tsconfig.json`:
     "allowJs": true
   }
 }
+```
+
+### Changing the entrypoint
+
+By default, preact-cli looks for `src/index.js` to start your app. This plugin
+widens the scope to "any file in `src` that starts with `index` and has
+a file extension resolved by webpack" - to change this,
+override the `preact-cli-entrypoint` in `preact.config.js`:
+
+```js
+import { resolve } from 'path'
+
+export default function (config, env, helpers) {
+  preactCliTypeScript(config)
+
+  config.resolve.alias['preact-cli-entrypoint'] = resolve(__dirname, 'src', 'foo-file.foo-extension')
+}
+
 ```

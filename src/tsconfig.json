@@ -6,6 +6,7 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "jsx": "react",
-    "jsxFactory": "h"
+    "jsxFactory": "h",
+    "allowJs": true
   }
 }
