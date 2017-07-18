@@ -16,10 +16,10 @@ const root = cwd.endsWith(suffix)
   : cwd
 
 // Install tsconfig
-if (fs.access(path.join(root, 'tsconfig.json'), fs.constants.F_OK, () => {})) {
+if (fs.existsSync(path.join(root, 'tsconfig.json'))) {
   // TODO: If file exists, get existing config and merge correct values.
   console.log(
-    'tsconfig detected - make sure you have the correct settings.'
+    'tsconfig detected - make sure you have the correct settings: https://github.com/wub/preact-cli-plugin-typescript#installation'
   )
 } else {
   try {
@@ -34,10 +34,10 @@ if (fs.access(path.join(root, 'tsconfig.json'), fs.constants.F_OK, () => {})) {
 }
 
 // Install preact.config.js
-if (fs.access(path.join(root, 'preact.config.js'), fs.constants.F_OK, () => {})) {
+if (fs.existsSync(path.join(root, 'preact.config.js'))) {
   // TODO: If file exists, get existing config and merge correct values.
   console.log(
-    'preact.config.js detected - you can now import the plugin.'
+    'preact.config.js detected - you can now import the plugin: https://github.com/wub/preact-cli-plugin-typescript#existing-tsconfigjson'
   )
 } else {
   try {
