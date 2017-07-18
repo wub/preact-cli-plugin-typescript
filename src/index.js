@@ -14,7 +14,7 @@ const preactCliTypeScript = config => {
   config.module.loaders.push({
     enforce: 'pre',
     test: /\.tsx?$/,
-    loader: 'ts-loader'
+    loader: 'awesome-typescript-loader'
   })
 
   // Currently, preact-cli only looks for `src/index.js` - this will look

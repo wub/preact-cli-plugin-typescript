@@ -1,10 +1,5 @@
 #!/usr/bin/env node
 
-/**
- * This file creates a `tsconfig.json` if it doesn't already exist.
- * tsconfig is the recommended method for configuring TypeScript.
- */
-
 /* global require process */
 const path = require('path')
 const fs = require('fs')

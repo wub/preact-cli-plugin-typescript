@@ -3,8 +3,7 @@
 Use TypeScript with [preact-cli](https://github.com/developit/preact-cli).
 
 This will install [typescript](https://github.com/Microsoft/TypeScript)
-and [ts-loader](https://github.com/TypeStrong/ts-loader). Support for
-`awesome-typescript-loader` will be added soon.
+and [awesome-typescript-loader](https://github.com/s-panferov/awesome-typescript-loader).
 
 If you prefer Flow, check out [preact-cli-plugin-flow](https://github.com/SaraVieira/preact-cli-plugin-flow).
 
