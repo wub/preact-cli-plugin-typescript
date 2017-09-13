@@ -80,3 +80,5 @@ export default function (config, env, helpers) {
 }
 
 ```
+
+Changing the entrypoint is **NOT** fully supported by preact-cli at this time. We recommend enabling `allowJs` in your `tsconfig.json`, so that the entrypoint for preact-cli can remain as `src/index.js`.
