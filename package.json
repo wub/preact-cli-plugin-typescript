@@ -21,7 +21,8 @@
   },
   "dependencies": {
     "awesome-typescript-loader": "^3.2.1",
-    "typescript": "^2.4.1"
+    "typescript": "^2.4.1",
+    "typings-for-css-modules-loader": "^1.7.0"
   },
   "devDependencies": {
     "eslint": "^3.19.0",
