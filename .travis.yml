@@ -1,6 +1,5 @@
-dist: trusty
+dist: bionic
 language: node_js
 sudo: false
 node_js:
   - stable
-  - 12
