@@ -20,7 +20,7 @@
     "lint": "standard"
   },
   "dependencies": {
-    "awesome-typescript-loader": "^3.2.1",
+    "awesome-typescript-loader": "^5.0.0",
     "typescript": "^2.4.1",
     "typings-for-css-modules-loader": "^1.7.0"
   },
